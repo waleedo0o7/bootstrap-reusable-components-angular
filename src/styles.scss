@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+rHeading,
+rText {
+  display: block;
+}
+
+pre {
+  color: #fff !important;
+  background: #111;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.services-list-wrapper {
+  .service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+    text-transform: capitalize;
+    .image {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .name {
+      flex-grow: 1;
+    }
+  }
+}
+
+.chip {
+  background: #f1f1f1;
+  color: #000;
+  display: inline-flex;
+  padding: 6px 12px;
+  border-radius: 500px;
+  text-transform: capitalize;
+  .selected {
+    background: #000;
+    color: #fff;
+  }
+}
+
+.sub-services-list-wrapper {
+}

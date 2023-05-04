@@ -1,0 +1,70 @@
+<div class="page-wrapper select-service">
+
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <div class="col-lg-3">
+
+        <rText text="select main service" class="h3 text-capitalize"></rText>
+
+        <div class="services-list-wrapper">
+
+          <label *ngFor="let item of mainCategoriesList ; let i = index" [for]="'main-service-item'+item.id"
+            class="service-item" (click)="getSubCategories(i)">
+            <img [src]="item.imageURL" class="img-fluid image mr-2" alt="">
+            <p class="name m-0"> {{item.name}} </p>
+            <input type="radio" name="service-item" [id]="'main-service-item'+item.id" [checked]="i===0">
+          </label> <!-- service-item -->
+
+
+        </div><!-- services-list-wrapper -->
+      </div><!-- col-lg-3 -->
+      <div class="col-lg-9">
+
+        <rText text="select sub service" class="h3 text-capitalize"></rText>
+
+        <div class="sub-services-list-wrapper">
+
+          <label *ngFor="let item of subCategoriesList ; let i = index" class="sub-services-item chip mr-2"
+            [for]="'sub-service-item'+item.id" (click)="getServices(i)">
+            <input type="radio" name="sub-service-item" [id]="'sub-service-item'+item.id" class="mr-1"
+              [checked]="i===0">
+            <p class="name m-0"> {{item.name}} </p>
+          </label>
+
+        </div><!-- sub-services-list-wrapper -->
+
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col"> Service Name</th>
+              <th scope="col"> Default Price </th>
+              <th scope="col"> State </th>
+              <th scope="col"> Duration </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of servicesList">
+              <th>
+                <input type="checkbox" />
+              </th>
+              <td> {{item.name}} </td>
+              <td> {{item.defaultPrice}} </td>
+              <td> {{item.state}} </td>
+              <td> {{item.duration}} </td>
+            </tr>
+
+          </tbody>
+        </table>
+
+
+      </div> <!-- col-lg-8 -->
+    </div> <!-- row -->
+
+  </div><!-- container-fluid -->
+
+</div> <!-- select-service-page-wrapper -->
+
+<pre>{{mainCategoriesList | json}}</pre>

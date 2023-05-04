@@ -1,0 +1,180 @@
+{
+  "mainCategory": [
+    {
+      "id": 1,
+      "name": "mainCategory 1",
+      "imageURL": "http://localhost:4200/assets/img/001.jpg",
+      "subCategory": [
+        {
+          "id": 1,
+          "name": "sub cat 1 of mainCategory 1 ",
+          "services": [
+            {
+              "id": 1,
+              "name": "Services 1 of  sub cat 1 of mainCategory 1",
+              "defaultPrice": 100,
+              "state": 1,
+              "duration": 30
+            },
+            {
+              "id": 2,
+              "name": "Services 2 of  sub cat 1 of mainCategory 1",
+              "defaultPrice": 100,
+              "state": 1,
+              "duration": 30
+            },
+            {
+              "id": 3,
+              "name": "Services 3 of  sub cat 1 of mainCategory 1",
+              "defaultPrice": 100,
+              "state": 1,
+              "duration": 30
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "sub cat 2 of mainCategory 1",
+          "services": [
+            {
+              "id": 1,
+              "name": "Services 4",
+              "defaultPrice": 100,
+              "state": 1,
+              "duration": 30
+            },
+            {
+              "id": 2,
+              "name": "Services 5",
+              "defaultPrice": 100,
+              "state": 1,
+              "duration": 30
+            },
+            {
+              "id": 3,
+              "name": "Services 6",
+              "defaultPrice": 100,
+              "state": 1,
+              "duration": 30
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "sub cat 3 of mainCategory 1",
+          "services": [
+            {
+              "id": 1,
+              "name": "Services 7",
+              "defaultPrice": 130,
+              "state": 1,
+              "duration": 30
+            },
+            {
+              "id": 2,
+              "name": "Services 8",
+              "defaultPrice": 120,
+              "state": 1,
+              "duration": 30
+            },
+            {
+              "id": 3,
+              "name": "Services 9",
+              "defaultPrice": 1000,
+              "state": 1,
+              "duration": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "mainCategory 2 ",
+      "imageURL": "http://localhost:4200/assets/img/002.jpg",
+      "subCategory": [
+        {
+          "id": 1,
+          "name": "face cut 1",
+          "services": [
+            {
+              "id": 1,
+              "name": "Services 1",
+              "defaultPrice": 100,
+              "state": 1,
+              "duration": 30
+            },
+            {
+              "id": 2,
+              "name": "Services 2",
+              "defaultPrice": 100,
+              "state": 1,
+              "duration": 30
+            },
+            {
+              "id": 3,
+              "name": "Services 3",
+              "defaultPrice": 100,
+              "state": 1,
+              "duration": 30
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "face cut 2",
+          "services": [
+            {
+              "id": 1,
+              "name": "Services 4",
+              "defaultPrice": 100,
+              "state": 1,
+              "duration": 30
+            },
+            {
+              "id": 2,
+              "name": "Services 5",
+              "defaultPrice": 100,
+              "state": 1,
+              "duration": 30
+            },
+            {
+              "id": 3,
+              "name": "Services 6",
+              "defaultPrice": 100,
+              "state": 1,
+              "duration": 30
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "face cut 3",
+          "services": [
+            {
+              "id": 1,
+              "name": "Services 7",
+              "defaultPrice": 130,
+              "state": 1,
+              "duration": 30
+            },
+            {
+              "id": 2,
+              "name": "Services 8",
+              "defaultPrice": 120,
+              "state": 1,
+              "duration": 30
+            },
+            {
+              "id": 3,
+              "name": "Services 9",
+              "defaultPrice": 1000,
+              "state": 1,
+              "duration": 30
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
