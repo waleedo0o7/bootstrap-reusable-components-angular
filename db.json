@@ -38,7 +38,7 @@
           "services": [
             {
               "id": 1,
-              "name": "Services 4",
+              "name": "Services 4 00000",
               "defaultPrice": 100,
               "state": 1,
               "duration": 30
