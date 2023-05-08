@@ -176,5 +176,58 @@
         }
       ]
     }
+  ],
+  "nestedCategories": [
+    {
+      "id": 1,
+      "name": "a1",
+      "selected": false,
+      "childs": [
+        {
+          "id": 2,
+          "name": "ab1",
+          "selected": true,
+          "childs": [
+            {
+              "id": 3,
+              "name": "abc1000",
+              "selected": false
+            },
+            {
+              "id": 9,
+              "name": "abc1005000",
+              "selected": false
+            },
+            {
+              "id": 10,
+              "name": "abc1000asdsad",
+              "selected": false
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "name": "abc1abc1abc1",
+          "selected": false
+        },
+        {
+          "id": 7,
+          "name": "abc1abc1",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "xyz2",
+      "selected": false,
+      "childs": [
+        {
+          "id": 5,
+          "name": "xyzxyz2",
+          "selected": true
+        }
+      ]
+    }
   ]
 }

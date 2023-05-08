@@ -12,9 +12,10 @@ import { rText } from './shared-components/r-text.component';
 import { rModal } from './shared-components/r-modal.component';
 import { FormsModule } from '@angular/forms';
 import { SelectServiceComponent } from './views/select-service/select-service.component'; //import FormsModule
+import { rNestedCheckBox } from './shared-components/r-nestedCheckBox.component';
 
 @NgModule({
-  declarations: [AppComponent, rButton, rHeading, rText, rModal, SelectServiceComponent],
+  declarations: [AppComponent, rButton, rHeading, rText, rModal, SelectServiceComponent , rNestedCheckBox],
   imports: [BrowserModule, AppRoutingModule, NgbModule, FormsModule,ReactiveFormsModule,HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],

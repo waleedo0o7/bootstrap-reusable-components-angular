@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { SharedService } from './services/shared.service';
 
 @Component({
   selector: 'app-root',
@@ -8,35 +9,25 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 })
 export class AppComponent {
   title = 'Home';
+  categoriesList: any = '';
 
-  contactForm = new FormGroup({
-    firstname: new FormControl("",Validators.required),
-    lastname: new FormControl(),
-    email: new FormControl(),
-    gender: new FormControl(),
-    isMarried: new FormControl(),
-    country: new FormControl(),
+  constructor(private service: SharedService, private renderer: Renderer2) {}
 
-    address : new FormGroup({
-      city : new FormControl(),
-      street : new FormControl(),
-      pincode : new FormControl(),
-      country : new FormControl()
-    })
-  });
+  someFunction(e: any) {
+    console.log(this.categoriesList);
+  }
 
-  words = {
-    en: 'Hello this is reusable H1',
-    ar: 'اهلا و سهلا ',
-  };
+  getNestedCategories() {
+    this.service.getNestedCategories().subscribe((data) => {
+      this.categoriesList = data;
+    });
+  }
 
-  constructor() {}
+  ngAfterViewInit() {}
 
   ngOnInit() {
-    // console.log(this.contactForm);
+    this.getNestedCategories();
   }
 
-  onSubmit() {
-    // console.log(this.contactForm);
-  }
+  onSubmit() {}
 }

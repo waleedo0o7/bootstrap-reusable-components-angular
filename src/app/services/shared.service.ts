@@ -11,4 +11,7 @@ export class SharedService {
     return this.http.get('http://localhost:8000/mainCategory');
   }
 
+  getNestedCategories() {
+    return this.http.get('http://localhost:8000/nestedCategories');
+  }
 }
